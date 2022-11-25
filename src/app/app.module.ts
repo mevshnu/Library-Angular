@@ -39,7 +39,8 @@ component:ViewComponent
 component:SearchComponent
  },
 {
- path:"issue",component:IssueComponent
+ path:"issue",
+ component:IssueComponent
   },
   {
 path:"edit",
@@ -51,7 +52,7 @@ component:DeleteComponent
  },
 {
 path:"entry",
-component:EditComponent
+component:BookEntryComponent
 }
 ]
 
