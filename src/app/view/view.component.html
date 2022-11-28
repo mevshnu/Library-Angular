@@ -6,18 +6,19 @@
               <h1 class="text-light">View Book</h1>
                 
                 <div class="row">
-                  <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                  <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3" *ngFor="let i of books">
                    
                     <div class="card " >
-                      <img height="350" src="https://m.media-amazon.com/images/I/51W-r3VQlAL._SX320_BO1,204,203,200_.jpg" class="card-img-top" alt="...">
+                      <img height="350" src="{{i.image}}"
+                       class="card-img-top" alt="...">
                       <div class="card-body">
-                        <h5 class="card-title ">It Starts With Us</h5>
-                        <p class="card-text">by Colleen Hoover</p>
+                        <h5 class="card-title ">{{i.title}}</h5>
+                        <p class="card-text">{{i.author}}</p>
                       </div>
                         <details> 
-                          Publisher  :  Simon & Schuster
-                          Language  :  English
-                          Price : 250
+                          {{i.publisher}}
+                          {{i.language}}
+                          {{i.price}}
                         </details>
                       
                       <div class="card-body">
@@ -28,240 +29,12 @@
 
 
                   </div>
-                  <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-
-
-                    <div class="card">
-                      <img height="350" src="https://m.media-amazon.com/images/I/51Zu0ZwT0jL._SX320_BO1,204,203,200_.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">It Ends With Us</h5>
-                        <p class="card-text">by Colleen Hoover</p>
-                      </div>
-                      <details> 
-                        Publisher  :  Simon & Schuster
-                        Language  :  English
-                        Price : 250
-                      </details>
-                    
-                    <div class="card-body">
-                      <a href="#" class="card-link"></a>
-
-                    </div>
-                  </div>
-
-                  </div>
-                  <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-
-                    <div class="card">
-                      <img height="350" src="https://m.media-amazon.com/images/I/416Z99JF6AS._SX460_BO1,204,203,200_.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">The Power of A Positive Attitude</h5>
-                        <p class="card-text">Roger Fritz</p>
-                      </div>
-                      <details> 
-                        Publisher : Fingerprint
-                        Language :  English
-                        Price : 210
-                      </details>
-                    
-                    <div class="card-body">
-                      <a href="#" class="card-link"></a>
-
-                    </div>
-                  </div>
-
-                  </div>
-                  <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-                    
-                    <div class="card">
-                      <img height="350" src="https://m.media-amazon.com/images/I/51BtI1vfkIL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">A Game of Thrones</h5>
-                        <p class="card-text">George R.R. Martin </p>
-                      </div>
-                      <details> 
-                        Publisher : HarperVoyager
-                        Language : English
-                        Price : 1000
-                      </details>
-                    
-                    <div class="card-body">
-                      <a href="#" class="card-link"></a>
-
-                    </div>
-                  </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-
-                    <div class="card">
-                      <img height="350" src="https://m.media-amazon.com/images/I/41OiDvq9pDS._SX198_BO1,204,203,200_QL40_FMwebp_.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Sherlock Holmes</h5>
-                        <p class="card-text">Arthur Ignatius</p>
-                      </div>
-                      <details> 
-                        Publisher :   Fingerprint
-                        Language :  English
-                        Price : 900
-                      </details>
-                    
-                    <div class="card-body">
-                      <a href="#" class="card-link"></a>
-
-                    </div>
-                  </div>
-
-                  </div>
-                  <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-
-                    <div class="card">
-                      <img height="350" src="https://m.media-amazon.com/images/I/51PJyvcfPGL._SX321_BO1,204,203,200_.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Life's Amazing Secrets</h5>
-                        <p class="card-text"> Gaur Gopal Das</p>
-                      </div>
-                      <details> 
-                        Publisher  :  Penguin
-                        Language  :  English
-                        Price : 200
-                      </details>
-                    
-                    <div class="card-body">
-                      <a href="#" class="card-link"></a>
-
-                    </div>
-                  </div>
-
-                  </div>
-                  <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-
-                    <div class="card">
-                      <img height="350" src="https://m.media-amazon.com/images/I/41+CqNWoutS._SX460_BO1,204,203,200_.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">The Power of Your Subconscious Mind</h5>
-                        <p class="card-text">Joseph Murphy</p>
-                      </div>
-                      <details> 
-                        Publisher  :  Fingerprint
-                        Language  :  English
-                        Price : 100
-                      </details>
-                    
-                    <div class="card-body">
-                      <a href="#" class="card-link"></a>
-
-                    </div>
-                  </div>
-
-                  </div>
-                  <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-
-                    <div class="card">
-                      <img height="350" src="https://m.media-amazon.com/images/I/41W-o6xu2bL._SX323_BO1,204,203,200_.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Do It Today</h5>
-                        <p class="card-text">Darius Foroux</p>
-                      </div>
-                      <details> 
-                        Publisher  :  Penguin
-                        Language  :  English
-                        Price :  90
-                      </details>
-                    
-                    <div class="card-body">
-                      <a href="#" class="card-link"></a>
-
-                    </div>
-                  </div>
-
-                  </div>
-                  <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-
-                    <div class="card">
-                      <img height="350" src="https://m.media-amazon.com/images/I/51ewXeUdkvL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Karma</h5>
-                        <p class="card-text">Sadhguru</p>
-                      </div>
-                      <details> 
-                        Publisher  :   Penguin 
-                        Language  :  English
-                        Price : 120
-                      </details>
-                    
-                    <div class="card-body">
-                      <a href="#" class="card-link"></a>
-
-                    </div>
-                  </div>
-
-                  </div>
-                  <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-
-                    <div class="card">
-                      <img height="350" src="https://m.media-amazon.com/images/I/61ck5XWxB3L._SX324_BO1,204,203,200_.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Grandma's Bag of Stories</h5>
-                        <p class="card-text">Sudha Murty</p>
-                      </div>
-                      <details> 
-                        Publisher  :  Penguin
-                        Language  :  English
-                        Price : 110
-                      </details>
-                    
-                    <div class="card-body">
-                      <a href="#" class="card-link"></a>
-
-                    </div>
-                  </div>
-
-                  </div>
-                  <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-
-                    <div class="card">
-                      <img height="350" src="https://m.media-amazon.com/images/I/41JoC4r8JDL._SX322_BO1,204,203,200_.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Think Straight</h5>
-                        <p class="card-text">Darius Foroux</p>
-                      </div>
-                      <details> 
-                        Publisher  :  Penguin
-                        Language  :  English
-                        Price : 250
-                      </details>
-                    
-                    <div class="card-body">
-                      <a href="#" class="card-link"></a>
-
-                    </div>
-                  </div>
-
-                  </div>
-                  <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-
-                    <div class="card">
-                      <img height="350" src="https://m.media-amazon.com/images/I/4180omRGrSL._SX198_BO1,204,203,200_QL40_FMwebp_.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">You Can</h5>
-                        <p class="card-text">Matthew Adams</p>
-                      </div>
-                      <details> 
-                        Publisher  :  Fingerprint
-                        Language  :  English
-                        Price : 250
-                      </details>
-                    
-                    <div class="card-body">
-                      <a href="#" class="card-link"></a>
-
-                    </div>
-                  </div>
+                  
 
                   </div>
                 </div>
                 
-            </div>
+            
         </div>    
     </div>
 </div>

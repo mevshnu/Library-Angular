@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./issue.component.css']
 })
 export class IssueComponent {
+name=""
+title=""
+date=""
+membershipNumber=""
+readIssue=()=>
+{
+let data2:any={"name":this.name,"title":this.title,"date":this.date,"membershipNumber":this.membershipNumber}
+console.log(data2)
+}
 
 }
