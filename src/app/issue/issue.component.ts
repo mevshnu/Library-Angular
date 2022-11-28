@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./issue.component.css']
 })
 export class IssueComponent {
+name=""
+title=""
+date=""
+membershipNumber=""
 
 }

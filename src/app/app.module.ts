@@ -14,6 +14,7 @@ import { EditComponent } from './edit/edit.component';
 import { IssueComponent } from './issue/issue.component';
 import { NavComponent } from './nav/nav.component';
 import { RouterModule, Routes } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 const MyRoute: Routes=[
   {
@@ -73,7 +74,8 @@ component:BookEntryComponent
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(MyRoute)
+    RouterModule.forRoot(MyRoute),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
