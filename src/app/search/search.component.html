@@ -7,10 +7,10 @@
 
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">User Name</label>
-                    <input type="text" class="form-control">
+                    <input name="title" [(mgModel)]="title" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <button class="btn btn-dark"><a href="">Search</a></button>
+                    <button (click)="readSearch()" class="btn btn-dark"><a href="">Search</a></button>
                 </div>
             </div>
         </div>    

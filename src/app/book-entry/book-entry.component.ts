@@ -12,6 +12,9 @@ export class BookEntryComponent {
   publisher=""
   language=""
   price=""
+  distrubuter=""
+  released=""
+  discription=""
   readValue=()=>
   {
   let data:any =  {
@@ -20,7 +23,11 @@ export class BookEntryComponent {
     "author": this.author,
     "publisher":this.publisher,
     "language":this.language,
-    "price":this.price
+    "price":this.price,
+    "distrubuter":this.distrubuter,
+    "released":this.released,
+    "discription":this.discription
+
   }
   console.log(data)
   }

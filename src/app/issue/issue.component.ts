@@ -10,5 +10,10 @@ name=""
 title=""
 date=""
 membershipNumber=""
+readIssue=()=>
+{
+let data2:any={"name":this.name,"title":this.title,"date":this.date,"membershipNumber":this.membershipNumber}
+console.log(data2)
+}
 
 }

@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./user-signup.component.css']
 })
 export class UserSignupComponent {
-
+name=""
+adharNumber
 }
